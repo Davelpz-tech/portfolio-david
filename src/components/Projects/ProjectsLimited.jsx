@@ -1,9 +1,9 @@
 import React from "react";
-import Cards from "../Cards/Cards";
+import CardsLimited from "../Cards/CardsLimited";
 import { Typography } from "@mui/material";
 import "./Projects.scss";
 
-const Projects = () => {
+const ProjectsLimited = () => {
   return (
     <section className="projects-wrapper">
       <Typography className="projects-section-title">
@@ -17,10 +17,10 @@ const Projects = () => {
         </p>
       </Typography>
       <div className="project-cards-wrapper">
-        <Cards />
+        <CardsLimited />
       </div>
     </section>
   );
 };
 
-export default Projects;
+export default ProjectsLimited;

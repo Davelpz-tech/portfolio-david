@@ -7,7 +7,7 @@
 }
 
 :root {
-  --primaryColor: #ad2c2c;
+  --primaryColor: #532cad;
   --primaryTextColor: black;
   --secondaryTextColor: white;
 }
@@ -38,8 +38,24 @@ button:hover {
   transform: scale(1.02);
 }
 
+button a {
+  color: white;
+}
+
+button a:hover {
+  color: white;
+}
+
 .outline {
   background: none;
+  color: var(--primaryColor);
+}
+
+.outline a {
+  color: var(--primaryColor);
+}
+
+.outline a:hover {
   color: var(--primaryColor);
 }
 

@@ -1,19 +1,24 @@
+import React from "react";
+
 import { Route, Routes } from "react-router-dom";
 import { Footer, Navbar } from "./components/";
-import Home from "./pages/Home/Home";
+import { HomePage, AboutPage, ProjectsPage, ContactPage } from "./pages/";
+import { ThemeContext } from "./utils/themeContext";
 
 const App = () => {
+  const { toggle } = React.useContext(ThemeContext);
   return (
-    <div className="App">
+    <div className="App" id={toggle ? "light" : "dark"}>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/about" />
-        <Route path="/projects" />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

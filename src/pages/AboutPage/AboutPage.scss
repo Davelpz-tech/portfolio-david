@@ -1,0 +1,53 @@
+.aboutpage-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 var(--lg-screen-spacing);
+    padding: 2rem 0;
+    margin-bottom: 1rem;
+    h1 {
+      color: var(--primaryColor);
+    }
+    h4 {
+      color: #525252;
+      font-weight: normal;
+    }
+    .experience-wrapper {
+      .work-experience-items {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+    }
+    .skills-wrapper {
+      ul > li {
+        list-style: inside;
+      }
+    }
+    .languages-wrapper {}
+    .education-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .achievements-wrapper {
+      .achievement-items-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      h3 {
+        font-weight: bold;
+      }
+      h4 {
+        color: var(--primaryColor);
+      }
+    }
+  }
+  
+  @media screen and (max-width: 1920px) {
+    .aboutpage-wrapper {
+      margin: 0 var(--md-screen-spacing);
+    }
+  }

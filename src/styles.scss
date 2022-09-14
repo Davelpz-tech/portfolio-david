@@ -3,33 +3,102 @@
 * {
   box-sizing: border-box;
   font-family: "Poppins";
+  font-size: 1em;
   margin: 0;
   padding: 0;
 }
 
-$primaryColor: rgb(173, 44, 44);
+// $primaryColor: rgb(83, 44, 173);
+// $primaryTextColor: black;
+// $secondaryTextColor: white;
+// $bgColor: rgb(255, 255, 255);
+// $bgColorAccent: rgb(255, 255, 255);
+$paragraphText: 1.2em;
+$subHeaderText: 1.5em;
+$headerText: 2em;
+
+
+$primaryColor: rgb(122, 80, 190);
 $primaryTextColor: black;
 $secondaryTextColor: white;
+$bgColor: rgb(10, 10, 10);
+$bgColorAccent: rgb(17, 17, 17);
+$primaryTextColorAccent: rgb(163, 163, 163);
+$btnTextColor: white;
+$outlineTextColor: white;
+$boxShadow: 0 5px 10px 1px rgba($color: black, $alpha: 0.3);
+$lgScreenSpacing: 13%;
+$mdScreenSpacing: 10%;
+$smScreenSpacing: 5%;
 
 :root {
   --primaryColor: #{$primaryColor};
   --primaryTextColor: #{$primaryTextColor};
+  --primaryTextColorAccent: #{$primaryTextColorAccent};
   --secondaryTextColor: #{$secondaryTextColor};
+  --paragraphText: #{$paragraphText};
+  --subHeaderText: #{$subHeaderText};
+  --headerText: #{$headerText};
+  --bgColor: #{$bgColor};
+  --bgColorAccent: #{$bgColorAccent};
+  --btnTextColor: #{$btnTextColor};
+  --outlineTextColor: #{$outlineTextColor};
+  --boxShadow: #{$boxShadow};
+  --lg-screen-spacing: #{$lgScreenSpacing};
+  --md-screen-spacing: #{$mdScreenSpacing};
+  --sm-screen-spacing: #{$smScreenSpacing};
+}
+
+#light {
+  --primaryColor: rgb(122, 80, 190);
+  --primaryTextColor: black;
+  --secondaryTextColor: rgb(0, 0, 0);
+  --bgColor: rgb(255, 255, 255);
+  --bgColorAccent: rgb(255, 255, 255);
+  --primaryTextColorAccent: rgb(63, 63, 63);
+  --boxShadow: 0 5px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+#dark {
+  --primaryColor: rgb(122, 80, 190);
+  --primaryTextColor: black;
+  --secondaryTextColor: white;
+  --bgColor: rgb(10, 10, 10);
+  --bgColorAccent: rgb(17, 17, 17);
+  --primaryTextColorAccent: rgb(163, 163, 163);
+  --boxShadow: 0 5px 10px 1px rgba(0, 0, 0, 0.3);
 }
 
 /* Global Element Styles */
+h1 {
+  color: var(--secondaryTextColor);
+  font-size: var(--headerText);
+}
+h3 {
+  color: var(--secondaryTextColor);
+  font-size: var(--subHeaderText);
+}
+p {
+  color: var(--primaryTextColorAccent);
+  font-size: var(--paragraphText);
+}
+
 a {
   text-decoration: none;
-  color: var(--primaryTextColor);
+  color: var(--secondaryTextColor);
   transition: .2s ease-in-out;
+  font-size: var(--paragraphText);
   &:hover {
     color: var(--primaryColor);
   }
 }
+ul {
+  color: var(--primaryTextColorAccent);
+}
 
 button {
   display: flex;
-  color: var(--secondaryTextColor);
+  color: var(--btnTextColor);
   background: var(--primaryColor);
   border: 1px solid var(--primaryColor);
   padding: 0.5rem 1rem;
@@ -39,12 +108,32 @@ button {
   &:hover {
     transform: scale(1.02)
   }
+  a {
+    color: white;
+    &:hover {
+      color: white;
+    }
+  }
 }.outline {
   background: none;
   color: var(--primaryColor);
+  a {
+    color: var(--primaryColor);
+    &:hover {
+      color: var(--primaryColor)
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 /* Global Class Styles */
+.App {
+  background-color: var(--bgColor);
+}
+
 .text-container {
   display: flex;
   flex-direction: column;
@@ -58,4 +147,20 @@ button {
 
 .logo-span {
   color: var(--primaryColor);
+}
+
+.accented-text{
+ color: var(--primaryColor); 
+}
+
+.theme-switch {
+  position: fixed !important;
+  top: 2rem;
+  left: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 70px;
 }

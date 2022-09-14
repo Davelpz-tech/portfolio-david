@@ -1,0 +1,12 @@
+.projects-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem var(--lg-screen-spacing);
+    gap: 2rem;
+  }
+  
+  @media screen and (max-width: 1920px) {
+    .projects-page-wrapper {
+      margin: 1rem var(--md-screen-spacing);
+    }
+  }
