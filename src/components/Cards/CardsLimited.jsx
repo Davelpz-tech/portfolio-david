@@ -1,6 +1,5 @@
 import React from "react";
 import { projectsData } from "../Projects/projectsData";
-import { Link } from "react-router-dom";
 import "./Cards.scss";
 
 const CardsLimited = () => {
