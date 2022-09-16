@@ -29,9 +29,9 @@ const Cards = () => {
           </div>
         );
       })}
-      <div className="card-wrapper">
+      {/* <div className="card-wrapper">
         <MusicPlayer />
-      </div>
+      </div> */}
     </>
   );
 };
