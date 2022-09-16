@@ -19,7 +19,7 @@ const Intro = () => {
             <Typography className="intro-snippet">
               <h1 style={{ color: "white" }}>Full Stack Web Developer</h1>
               <p style={{ color: "white" }}>
-                Im a University of Arizona Graduate who is passionate about
+                Im a University of Arizona certified MERN Stack Developer who is passionate about
                 Front End Web Development!
               </p>
             </Typography>
@@ -35,7 +35,7 @@ const Intro = () => {
             <Typography className="intro-snippet">
               <h1>Full Stack Web Developer</h1>
               <p>
-                Im a University of Arizona Graduate who is passionate about
+                Im a University of Arizona certified MERN Stack Developer who is passionate about
                 Front End Web Development!
               </p>
             </Typography>

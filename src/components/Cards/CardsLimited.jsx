@@ -15,16 +15,16 @@ const CardsLimited = () => {
               <p>{data.description}</p>
             </div>
             <div className="sidebyside-btn-container">
-                <Link to={data.link} target="_blank" rel="noopener noreferrer">
+                <a href={data.link} target="_blank" rel="noopener noreferrer">
                   <button>
                     See Deployment
                   </button>
-                </Link>
-                <Link to={data.sourcecode} target="_blank" rel="noopener noreferrer">
+                </a>
+                <a href={data.sourcecode} target="_blank" rel="noopener noreferrer">
                   <button className="outline">
                     Source Code
                   </button>
-                </Link>
+                </a>
             </div>
           </div>
         );

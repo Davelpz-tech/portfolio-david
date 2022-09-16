@@ -27,6 +27,10 @@
   .card-wrapper {
     .sidebyside-btn-container {
       flex-direction: column;
+      button {
+        width: 100%;
+        justify-content: center;
+      }
     }
   }
 }

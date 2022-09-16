@@ -45,8 +45,8 @@ const Footer = () => {
           </div>
           <div className="personal-links">
             <h3>Personal Links</h3>
-            <Link to="https://github.com/Davelpz-tech" target="_blank" rel="noopener noreferrer">GitHub</Link>
-            <Link to="https://www.linkedin.com/in/david-lopez-712992207/" target="_blank" rel="noopener noreferrer">LinkedIn</Link>
+            <a href="https://github.com/Davelpz-tech" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/david-lopez-712992207/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <Link to="/contact">Contact</Link>
           </div>
         </Stack>
@@ -74,12 +74,8 @@ const Footer = () => {
           </div>
           <div className="mobile-personal-links">
             <h3>Personal Links</h3>
-            <Link to="https://github.com/Davelpz-tech" target="_blank" rel="noopener noreferrer" onClick={showNav}>
-              GitHub
-            </Link>
-            <Link to="https://www.linkedin.com/in/david-lopez-712992207/" target="_blank" rel="noopener noreferrer" onClick={showNav}>
-              LinkedIn
-            </Link>
+            <a href="https://github.com/Davelpz-tech" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/david-lopez-712992207/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <Link to="/contact" onClick={showNav}>
               Contact
             </Link>

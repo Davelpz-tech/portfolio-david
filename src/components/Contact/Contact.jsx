@@ -10,13 +10,7 @@ const Contact = () => {
   const [done, setDone] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        process.env.KEY,
-        "template_89bdzaj",
-        formRef.current,
-        process.env.KEY
-      )
+      emailjs.sendForm("service_7j3ie3w", "template_89bdzaj", formRef.current, "fc5WnmdQW9mqsYcP7")
       .then(
         (result) => {
           console.log(result.text);
@@ -36,11 +30,11 @@ const Contact = () => {
               <h1>Free Project Consultation</h1>
               <div className="contact-info">
                 <EmailIcon />
-                <p>foo.bar@baz.com</p>
+                <p>davelpz15@gmail.com</p>
               </div>
               <div className="contact-info">
                 <PhoneIcon />
-                <p>(xxx)-xxx-xxxx</p>
+                <p>(602)-350-9341</p>
               </div>
             </Typography>
           </div>
