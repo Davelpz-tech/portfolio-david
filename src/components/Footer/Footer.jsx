@@ -20,7 +20,7 @@ const Footer = () => {
   return (
     <nav className="footer-wrapper">
       <div className="footer-logo-wrapper">
-        <Link to="/">
+        <Link to="/portfolio-david">
           {toggle ? (
             <img src={davidlogo} className="logo" alt="" />
           ) : (
@@ -39,7 +39,7 @@ const Footer = () => {
         <Stack className="left" direction="row">
           <div className="navigation-links">
             <h3>Navigation</h3>
-            <Link to="/">Home</Link>
+            <Link to="/portfolio-david">Home</Link>
             <Link to="/about">About</Link>
             <Link to="/projects">Projects</Link>
           </div>
@@ -62,7 +62,7 @@ const Footer = () => {
         <Stack className="mobile-left" direction="row">
           <div className="mobile-navigation-links">
             <h3>Navigation</h3>
-            <Link to="/" onClick={showNav}>
+            <Link to="/portfolio-david" onClick={showNav}>
               Home
             </Link>
             <Link to="/about" onClick={showNav}>
@@ -100,7 +100,7 @@ const Footer = () => {
 
       <div className="footer-privacy-info">
         <p>&copy;David Lopez 2022 all rights reserved</p>
-        <a href="/">sitemap</a>
+        <a href="/portfolio-david">sitemap</a>
       </div>
     </nav>
   );

@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <div className="navbar-wrapper">
       <div className="nav-logo-container">
-        <Link to="/">
+        <Link to="/portfolio-david">
           {toggle ? (
             <img src={davidlogo} className="logo" alt="lightmode logo" />
           ) : (
@@ -33,7 +33,7 @@ const Navbar = () => {
       </div>
 
       <div className="nav-items">
-        <Link to="/">Home</Link>
+        <Link to="/portfolio-david">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/projects">Projects</Link>
         <div className="sidebyside-btn-container">
@@ -45,7 +45,7 @@ const Navbar = () => {
       </div>
 
       <div ref={navRef} className="mobile-nav-items">
-        <Link to="/" onClick={showNavbar}>
+        <Link to="/portfolio-david" onClick={showNavbar}>
           Home
         </Link>
         <Link to="/about" onClick={showNavbar}>
