@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/portfolio-david/static/css/main.4c302066.css",
+    "main.js": "/portfolio-david/static/js/main.86431e04.js",
+    "static/media/Hardcodethumbnail.jpg": "/portfolio-david/static/media/Hardcodethumbnail.66fc8afbcaef2f2defd1.jpg",
+    "static/media/wordleclone.jpg": "/portfolio-david/static/media/wordleclone.acdd07b6936d02ea5285.jpg",
+    "static/media/JSQuiz.jpg": "/portfolio-david/static/media/JSQuiz.3fd322fbe4efb086842a.jpg",
+    "static/media/lookythumbnail.jpg": "/portfolio-david/static/media/lookythumbnail.edeef13445d0270b23cf.jpg",
+    "static/media/davidlogodark.svg": "/portfolio-david/static/media/davidlogodark.c1f4a0caffbf0bba3fb7c7bf8447af1c.svg",
+    "static/media/davidlogo.svg": "/portfolio-david/static/media/davidlogo.8a5466d9719c0d4e0a2bb7fdc02fec68.svg",
+    "index.html": "/portfolio-david/index.html",
+    "main.4c302066.css.map": "/portfolio-david/static/css/main.4c302066.css.map",
+    "main.86431e04.js.map": "/portfolio-david/static/js/main.86431e04.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c302066.css",
+    "static/js/main.86431e04.js"
+  ]
+}
