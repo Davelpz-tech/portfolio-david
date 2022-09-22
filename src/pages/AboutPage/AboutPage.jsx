@@ -1,4 +1,5 @@
 import React from "react";
+import certification from "../../assets/certificate.jpg";
 
 import "./AboutPage.scss";
 
@@ -13,17 +14,17 @@ const AboutPage = () => {
         </p>
         <div className="work-experience-items">
           <div className="experience-item">
-            <h3>Company Name Here</h3>
+            <h3>Sun City West</h3>
             <h4>Lead Web Developer / Web Master</h4>
             <p>July 25th, 2022 - Current</p>
           </div>
           <div className="experience-item">
-            <h3>Company Name Here</h3>
+            <h3>Endurance International Group</h3>
             <h4>Web Designer / Professional Service</h4>
             <p>May 7th, 2020 - June 26th 2021</p>
           </div>
           <div className="experience-item">
-            <h3>Company Name Here</h3>
+            <h3>Endurance International Group</h3>
             <h4>Web Advisor / DNS Technical Support Specialist</h4>
             <p>June 14th, 2019 - June 14th, 2020</p>
           </div>
@@ -54,14 +55,14 @@ const AboutPage = () => {
       <div className="education-wrapper">
         <h1>Education</h1>
         <div className="education-item">
-          <h3>University of School</h3>
+          <h3>University of Arizona</h3>
           <h4>Full Stack Web Development</h4>
-          <p>date - date</p>
+          <p>2019 - 2022</p>
         </div>
         <div className="education-item">
-          <h3>Harvard</h3>
-          <h4>CS50 - Online Course</h4>
-          <p>date - date</p>
+          <h3>Harvard Online Course</h3>
+          <h4>CS50</h4>
+          <p>2020 - 2022</p>
         </div>
         <div
           className="diploma-wrapper"
@@ -73,9 +74,9 @@ const AboutPage = () => {
           }}
         >
           <img
-            src="https://source.unsplash.com/lJvU6RQno0g"
-            style={{ height: "200px", width: "100%", objectFit: "cover" }}
-            alt=""
+            src={certification}
+            style={{ height: "150px" , width: "250px" }}
+            alt="Full Stack Certificate from University of Arizona"
           />
         </div>
       </div>
