@@ -28,7 +28,7 @@ export const projectsData = [
     title: "Looky - Books API",
     description:
       "Spend hours searching for your favorite books and related information on this simple front end design interfacing with the Google Books API.",
-    link: "https://github.com/Davelpz-tech/looky-bookstore-app",
+    link: "https://looky-books-api.herokuapp.com/",
     sourcecode: "https://github.com/Davelpz-tech/looky-bookstore-app",
   },
   {

@@ -33,7 +33,6 @@ const About = () => {
         </Typography>
         <div className="sidebyside-btn-container">
           <button onClick={showModal}>Read More</button>
-          <button className="outline">My Diploma</button>
         </div>
 
         <div ref={modalRef} className="modal-wrapper">
