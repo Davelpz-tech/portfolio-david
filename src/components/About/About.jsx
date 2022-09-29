@@ -52,9 +52,9 @@ const About = () => {
               <Link to="/contact">
                 <button onClick={showModal}>Contact</button>
               </Link>
-              <Link to="../../assets/David_CV.pdf" target="_blank" download>
+              <a href="https://drive.google.com/uc?export=download&id=1LlWmvr01YIeOrCep_j6qig6CpHSUnvpr" target="_blank" download>
                 <button onClick={showModal} className="outline">Download CV</button>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

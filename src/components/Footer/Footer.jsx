@@ -87,7 +87,7 @@ const Footer = () => {
           <p>davelpz15@gmail.com</p>
           <p>(602)-350-9341</p>
         </Stack>
-        <Link to="../../assets/David_CV.pdf" target="_blank" download><button onClick={showNav}>Download CV</button></Link>
+        <a href="https://drive.google.com/uc?export=download&id=1LlWmvr01YIeOrCep_j6qig6CpHSUnvpr" target="_blank" download><button download>Download CV</button></a>
         <button onClick={toggleFunction}>
           {toggle ? <NightlightRoundIcon /> : <Brightness5Icon />}
         </button>

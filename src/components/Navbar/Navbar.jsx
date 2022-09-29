@@ -40,7 +40,7 @@ const Navbar = () => {
           <button onClick={toggleFunction}>
             {toggle ? <NightlightRoundIcon /> : <Brightness5Icon />}
           </button>
-          <Link to="../../assets/David_CV.pdf" target="_blank" download><button className="outline" download>Download CV</button></Link>
+          <a href="https://drive.google.com/uc?export=download&id=1LlWmvr01YIeOrCep_j6qig6CpHSUnvpr" target="_blank" download><button className="outline" download>Download CV</button></a>
         </div>
       </div>
 
